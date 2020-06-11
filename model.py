@@ -60,7 +60,7 @@ plt.xlabel('Predicted label')
 # Saving model to disk
 pickle.dump(logreg, open('model.pkl','wb'))
 vec_file = 'vectorizer.pickle'
-# pickle.dump(vectorizer, open(vec_file, 'wb'))
+pickle.dump(vectorizer, open(vec_file, 'wb'))
 
 # Loading model to compare the results
 model = pickle.load(open('model.pkl','rb'))
