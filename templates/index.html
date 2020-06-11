@@ -1,0 +1,15 @@
+<div src="{{url_for('static',filename='back.png')}}" style="background-image: url('/static/back.png/');height: 20cm;">
+
+<div id="form-main" class="center-block">
+  <div id="form-div" align="center";>
+    <form action="{{ url_for('predict')}}"method="post" align="center";>
+      <div class="form-group shadow-textarea">
+        <br><br>
+        <h1><label for="exampleFormControlTextarea6" style="color: white;">Catastrophic Post Genunity Detection</label></h1>
+        <textarea name="namequery" style="height: 3cm;width: 10cm;"validate[required,length[10,300]] feedback-input" id="comment" placeholder="Enter post...."></textarea>
+        <br><br><button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        
+      </div>
+    </form>
+  </div>
+</div>

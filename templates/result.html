@@ -1,0 +1,24 @@
+<div src="{{url_for('static',filename='back.png')}}" style="background-image: url('/static/back.png/');height: 20cm;">
+
+<header>
+  <div class="container">
+  <div id="brandname">
+    ML App
+  </div>
+  <h2 style="color: white;" align="center">Catastrophic Post Genunity Detection</h2>
+  
+</div>
+</header>
+<p style="color:blanchedalmond;font-size:20;text-align: center;"><b>Results for Post</b></p>
+<div class="results" align="center">
+
+
+  
+{% if prediction == 1%}
+<h2 style="color:blue;">Catastrophic</h2>
+{% elif prediction == 0%}
+<h2 style="color:red;">Not Catastrophic</h2>
+{% endif %}
+
+</div>
+</div>
